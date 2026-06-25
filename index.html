@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Professional Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+line-height:1.6;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#0f172af2;
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+padding:120px 10%;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+min-height:100vh;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h3{
+font-size:24px;
+color:#38bdf8;
+}
+
+.hero h1{
+font-size:60px;
+margin:15px 0;
+}
+
+.hero p{
+font-size:18px;
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+background:#0ea5e9;
+}
+
+.hero img{
+width:350px;
+border-radius:50%;
+border:6px solid #38bdf8;
+}
+
+.title{
+font-size:40px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text p{
+color:#cbd5e1;
+margin-bottom:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.skill{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-8px);
+}
+
+.skill h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project{
+background:#1e293b;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+}
+
+.project img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+margin-bottom:10px;
+}
+
+.project-content p{
+color:#cbd5e1;
+margin-bottom:20px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin-bottom:20px;
+color:#cbd5e1;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#020617;
+color:#94a3b8;
+}
+
+@media(max-width:900px){
+
+.hero{
+text-align:center;
+justify-content:center;
+}
+
+.hero img{
+margin-top:40px;
+width:280px;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+header{
+padding:20px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">Portfolio</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Your Name</h1>
+
+<p>
+A passionate Full Stack Web Developer specializing in responsive websites,
+modern web applications, UI/UX design, and cloud-based solutions.
+I build clean, scalable, and user-friendly digital experiences.
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" alt="Profile">
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="About">
+
+<div class="about-text">
+
+<p>
+I am a creative software developer with experience in HTML, CSS,
+JavaScript, React, PHP, Python, and MySQL. I enjoy building responsive
+websites and solving real-world problems using technology.
+</p>
+
+<p>
+My goal is to create impactful digital products that combine excellent
+design with outstanding performance.
+</p>
+
+<a href="#" class="btn">Download CV</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>HTML5</h3>
+<p>Semantic and accessible websites.</p>
+</div>
+
+<div class="skill">
+<h3>CSS3</h3>
+<p>Responsive layouts and animations.</p>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+<p>Interactive user interfaces.</p>
+</div>
+
+<div class="skill">
+<h3>React</h3>
+<p>Modern frontend development.</p>
+</div>
+
+<div class="skill">
+<h3>Node.js</h3>
+<p>Backend APIs and services.</p>
+</div>
+
+<div class="skill">
+<h3>MySQL</h3>
+<p>Database design and management.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="">
+
+<div class="project-content">
+
+<h3>Portfolio Website</h3>
+
+<p>
+Responsive personal portfolio built using HTML, CSS and JavaScript.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800" alt="">
+
+<div class="project-content">
+
+<h3>E-Commerce Website</h3>
+
+<p>
+Modern online shopping platform with secure payments.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="">
+
+<div class="project-content">
+
+<h3>Inventory Management System</h3>
+
+<p>
+A complete inventory and POS solution with reporting dashboard.
+</p>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="contact">
+
+<p><strong>Email:</strong> yourname@email.com</p>
+
+<p><strong>Phone:</strong> +256 XXX XXX XXX</p>
+
+<p><strong>Location:</strong> Kampala, Uganda</p>
+
+<a href="mailto:yourname@email.com" class="btn">Send Email</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Your Name. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
